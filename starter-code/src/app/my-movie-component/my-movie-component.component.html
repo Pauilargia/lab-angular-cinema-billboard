@@ -1,0 +1,23 @@
+<h3>ROOM {{movie.room}}</h3>
+<h2>{{movie.title}}</h2>
+<img [src]="movie.poster" alt="">
+Genres:
+  <ul>
+    <li *ngFor="let genre of movie.genres">{{genre}}</li>
+  </ul>
+
+<p>Year: {{movie.year}}</p>
+<p>Director: {{movie.director}}</p>
+Actors:
+  <ul>
+    <li *ngFor="let actor of movie.actors">{{actor}}</li>
+  </ul>
+
+Schedule
+  <ul>
+    <li *ngFor="let hour of movie.hours">{{hour}}</li>
+  </ul>
+
+<p>Synopsis: {{movie.synopsis}}</p>
+
+<button (click)="goHome()">Home Page</button>

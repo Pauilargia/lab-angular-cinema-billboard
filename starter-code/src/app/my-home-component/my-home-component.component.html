@@ -1,0 +1,6 @@
+
+<div *ngFor="let movie of cinema.getMovies()" [ngStyle]="{ 'display': 'inline-block', 'margin': '10px', 'text-align': 'center'}">
+  <p>ROOM {{movie.room}}</p>
+  <img [src]="movie.poster" [ngStyle]="{ 'width': '250px', 'height': '400px' }">
+  <p><a [routerLink] = "['/movie',movie.id]">{{movie.title}}</a></p>
+</div>
